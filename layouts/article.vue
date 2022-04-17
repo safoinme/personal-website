@@ -24,5 +24,5 @@ export default {
 
     return { article };
   },
-}
+};
 </script>

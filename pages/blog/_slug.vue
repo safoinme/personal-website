@@ -8,7 +8,7 @@
 
     <v-col cols="4">
       <p class="text-h5">Table of Contents</p>
-      <TableOfContents :toc="article.toc"/>
+      <TableOfContents :toc="article.toc" />
     </v-col>
   </v-row>
 </template>

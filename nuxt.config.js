@@ -45,12 +45,20 @@ export default {
     buildModules: [
         // https://go.nuxtjs.dev/vuetify
         '@nuxtjs/vuetify',
+        '@nuxtjs/google-fonts'
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
         '@nuxt/content'
     ],
+
+  googleFonts: {
+      families: {
+        "Fira Code": true
+      },
+    display: "swap"
+  },
 
     content: {
 
@@ -59,6 +67,7 @@ export default {
     // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
     vuetify: {
         customVariables: ['~/assets/variables.scss'],
+      treeShake: true,
         theme: {
             dark: false,
             themes: {
