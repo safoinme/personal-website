@@ -1,10 +1,14 @@
 <template>
-  <v-app-bar app elevation="0" color="black">
-    <v-toolbar-title class="white--text">Hamza Mogni</v-toolbar-title>
-    <v-spacer></v-spacer>
-    <v-btn text dark>Test</v-btn>
-    <v-btn text dark>Test</v-btn>
-    <v-btn text dark>Test</v-btn>
+  <v-app-bar app elevation="0" color="transparent" class="mx-16 px-16" absolute>
+    <v-toolbar-title>
+      <v-btn href="/" text class="text-h6 font-weight-black">
+        Safoine El Khabich
+      </v-btn>
+    </v-toolbar-title>
+    <!-- <v-spacer></v-spacer>
+    <v-btn text>Test</v-btn>
+    <v-btn text>Test</v-btn>
+    <v-btn text>Test</v-btn> -->
   </v-app-bar>
 </template>
 

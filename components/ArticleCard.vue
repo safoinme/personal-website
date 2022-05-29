@@ -1,25 +1,17 @@
 <template>
-  <span>
-    <v-card flat :to="`/blog/` + article.slug" hover>
-      <div class="font-weight-thin">{{ formatDate(article.createdAt) }}</div>
+  <v-card :to="`/blog/` + article.slug" elevation="2" class="pa-5">
+    <p class="text-h5 font-weight-black">
+      {{ article.title }}
+    </p>
 
-      <p class="text-h4 text--primary">
-        {{ article.title }}
-      </p>
+    <div class="my-5 text-h6 font-weight-medium">
+      {{ article.description }}...
+    </div>
 
-      <v-img :src="article.img" max-height="200px"></v-img>
-
-      <div class="text-primary my-5">{{ article.description }}...</div>
-
-      <v-card-actions>
-        <v-btn color="black" dark :to="`/blog/` + article.slug">
-          Read More
-        </v-btn>
-      </v-card-actions>
-    </v-card>
-
-    <v-divider class="my-5"></v-divider>
-  </span>
+    <span class="text-subtitle-2 font-weight-medium">
+      {{ formatDate(article.createdAt) }} - 20 min read
+    </span>
+  </v-card>
 </template>
 
 <script>
@@ -38,7 +30,6 @@ export default {
         year: "numeric",
         month: "long",
         day: "numeric",
-        hour: "numeric",
       };
       return new Date(date).toLocaleDateString("en", options);
     },
