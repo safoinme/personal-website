@@ -55,7 +55,8 @@ export default {
 
   googleFonts: {
       families: {
-        "Fira Code": true
+        "Lato": true,
+        "Source Sans Pro": true,
       },
     display: "swap"
   },

@@ -43,4 +43,7 @@ h6 {
   font-size: 2.7rem;
   font-weight: 900;
 }
+pre > code {
+  background-color: transparent !important;
+}
 </style>

@@ -1,11 +1,12 @@
 <template>
   <div class="text-center">
-    <HeaderAvatar src="https://avatars.githubusercontent.com/u/34200873?v=4" />
+    <HeaderAvatar :src="require('~/assets/safoinme.jpeg')" />
 
     <p class="text-h6 font-weight-black mb-0">Machine Learning Engineer</p>
-    <p class="text-subtitle-2">
-      I write about esoteric computer science topics that you’d love. - Writer,
-      Hacker, Author, Programmer.
+    <p class="text-subtitle-1">
+      I'm Machine Learning Engineer with Data Science background,
+      passionate about MLOps and building production ready ML systems.
+      
     </p>
 
     <HeaderSocialMedia />
